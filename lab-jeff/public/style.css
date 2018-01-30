@@ -1,0 +1,16 @@
+body {
+	background-color: bisque;
+}
+.timestamp {
+	color: darkgoldenrod;
+	font-style: italic;
+}
+#user-info {
+	float: right;
+}
+.avatar {
+	height: 30px;
+}
+.username {
+	font-weight: bold;
+}
