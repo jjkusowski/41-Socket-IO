@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="/style.css" rel="stylesheet" />
+  <title>SimpleChat</title>
+</head>
+
+<body>
+  <h1>Welcome to SimpleChat</h1>
+  <p>Enter a message and click Send Message</p>
+  <p>Enter a username and/or a url to an image to set an avatar</p>
+  <div id="user-info">
+    <form id="set-username-form">
+      <input type="text" id="username-input" />
+      <button type="submit">Set Username</button>
+    </form>
+    <form id="set-avatar-form">
+      <input type="text" id="avatar-input" />
+      <button type="submit">Set Avatar URL</button>
+    </form>
+  </div>
+
+
+  <form id="send-message-form">
+    <input type="text" id="message-input" />
+    <button type="submit">Send Message</button>
+  </form>
+  <div id="messages"></div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/models/chat-message.js"></script>
+<script src="/js/main.js"></script>
+
+</html>
